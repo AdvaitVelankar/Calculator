@@ -125,7 +125,6 @@ public class Calculator
                 n=sc.nextDouble();
                 double rootn=Math.sqrt(n);
                 System.out.println("Your Square root is:" +rootn);
-                break;
         }
     }
 }
