@@ -59,12 +59,31 @@ public class Calculator
             System.out.println("Your perimeter is:" +ans);
             break;
             case '4':System.out.println("Okay you have selected Area finder");  
-            System.out.println("Enter Length");
-            l=sc.nextDouble();
-            System.out.println("Enter Breadth");
-            b=sc.nextDouble();
-            ans=(l*b);
-            System.out.println("Your area is:" +ans);
+            System.out.println("Press 1 for finding the area of square");
+            System.out.println("Press 2 for finding the area of circle");
+            System.out.println("Press 3 for finding the area of rectangle");
+            ch=sc.next().charAt(0);
+            switch(ch)
+            {
+                case '1':double s;
+                System.out.println("Enter the length of side");
+                s=sc.nextDouble();
+                a=(4*s);
+                System.out.println("Area of Square is" +a);
+                break;
+                case '2':double r;
+                System.out.println("Enter the radius of circle");
+                r=sc.nextDouble();
+                a=(3.14*r);
+                System.out.println("Area of circle is:" +a);
+                break;
+                case '3':System.out.println("Enter Length");
+                l=sc.nextDouble();
+                System.out.println("Enter Breadth");
+                b=sc.nextDouble();
+                a=(l*b);
+                System.out.println("Area of square is:"+a);
+            }
             break;
             case '5':System.out.println("Okay, You have selected Temperature unit converter");
             double c, f;
@@ -125,6 +144,7 @@ public class Calculator
                 n=sc.nextDouble();
                 double rootn=Math.sqrt(n);
                 System.out.println("Your Square root is:" +rootn);
+                default;
         }
     }
 }
