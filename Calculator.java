@@ -3,6 +3,8 @@ public class Calculator
 {
     public static void main()
     {
+        for(char z=1; z<=2; z++)
+        {
         char ch;
         Scanner sc=new Scanner(System.in);
         System.out.println("Press 1 for Normal Calculator");
@@ -146,5 +148,20 @@ public class Calculator
                 System.out.println("Your Square root is:" +rootn);
                 break;
         }
+        System.out.println("Would you like to run the program again?");
+        System.out.println("If Yes press 'Y' and if No press 'N'");
+        char rc=sc.next().charAt(0);
+        switch(rc)
+        {
+            case 'Y':z=1;
+            break;
+            case 'y':z=1;
+            break;
+            case 'N':z=3;
+            break;
+            case 'n':z=3;
+            break;
+        }
+    }
     }
 }
