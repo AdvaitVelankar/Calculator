@@ -1,7 +1,7 @@
 import java.util.*;
 public class Percentage_Calculator
 {
-    public static void main()
+    public static void main(String args[])
     {
         for(char z=1; z<=2; z++)
         {
