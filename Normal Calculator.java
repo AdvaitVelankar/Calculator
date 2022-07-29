@@ -1,7 +1,7 @@
 import java.util.*;
 public class Normal_Calculator
 {
-    public static void main()
+    public static void main(String args[])
     {
         for(char x=1; x<=2; x++)
         {
