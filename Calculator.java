@@ -52,40 +52,59 @@ public class Calculator
                 System.out.println("Your Square Root is:" +ans);
                 break;
                 case '3':System.out.println("Okay, You have selected Perimeter finder");
-                double l;
-                System.out.println("Enter Length");
-                l=sc.nextDouble();
-                System.out.println("Enter Breadth");
-                b=sc.nextDouble();
-                ans=(l+b);
-                ans=(2*ans);
-                System.out.println("Your perimeter is:" +ans);
+                System.out.println("Press '1' for finding perimeter of square");
+                System.out.println("Press '2' for finding perimeter of a rectangle");
+                System.out.println("Press '3' for finding perimeter of a circle");
+                ch=sc.next().charAt(0);
+                switch(ch)
+                {
+                    case '1': double l;
+                    System.out.println("Enter length");
+                    l=sc.nextDouble();
+                    ans=(4*l);
+                    System.out.println("Perimeter of Square is: " +ans);
+                    break;
+                    case '2': System.out.println("Enter Length");
+                    l=sc.nextDouble();
+                    System.out.println("Enter Breadth");
+                    b=sc.nextDouble();
+                    ans=(l+b);
+                    ans=(2*ans);
+                    System.out.println("Perimeter of Rectangle is:" +ans);
+                    break;
+                    case '3':double rd;
+                    System.out.println("Enter the radius");
+                    rd=sc.nextDouble();
+                    ans=(2*3.142857142857143*rd);
+                    System.out.println("Perimeter of Circle is:" +ans);
+                }
                 break;
                 case '4':System.out.println("Okay you have selected Area finder");  
                 System.out.println("Press 1 for finding the area of square");
-                System.out.println("Press 2 for finding the area of circle");
-                System.out.println("Press 3 for finding the area of rectangle");
+                System.out.println("Press 2 for finding the area of rectangle");
+                System.out.println("Press 3 for finding the area of circle");
                 ch=sc.next().charAt(0);
                 switch(ch)
                 {
                     case '1':double s;
                     System.out.println("Enter the length of side");
                     s=sc.nextDouble();
-                    a=(4*s);
+                    a=(s*s);
                     System.out.println("Area of Square is" +a);
                     break;
-                    case '2':double r;
-                    System.out.println("Enter the radius of circle");
-                    r=sc.nextDouble();
-                    a=(3.14*r);
-                    System.out.println("Area of circle is:" +a);
-                    break;
-                    case '3':System.out.println("Enter Length");
+                    case '2':double l;
+                    System.out.println("Enter Length");
                     l=sc.nextDouble();
                     System.out.println("Enter Breadth");
                     b=sc.nextDouble();
                     a=(l*b);
                     System.out.println("Area of square is:"+a);
+                    break;
+                    case '3':double r;
+                    System.out.println("Enter the radius of circle");
+                    r=sc.nextDouble();
+                    a=(3.142857142857143*r);
+                    System.out.println("Area of circle is:" +a);
                 }
                 break;
                 case '5':System.out.println("Okay, You have selected Temperature unit converter");
@@ -148,9 +167,9 @@ public class Calculator
                     double rootn=Math.sqrt(n);
                     System.out.println("Your Square root is:" +rootn);
                     break;
-                    case 'V':System.out.println("Version: 1.0");
+                    case 'V':System.out.println("Version: 2.0");
                     break;
-                    case 'v':System.out.println("Version: 1.0");
+                    case 'v':System.out.println("Version: 2.0");
             } 
             System.out.println("Would you like to run the program again?");
             System.out.println("If Yes press 'Y' and if No press 'N'");
