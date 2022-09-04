@@ -24,10 +24,10 @@ public class Calculator
                 a=sc.nextDouble();
                 System.out.println("Enter B");
                 b=sc.nextDouble();
-                System.out.println("Press 1 for Addition");
-                System.out.println("Press 2 for Subtraction");
-                System.out.println("Press 3 for Multiplication");
-                System.out.println("Press 4 for Division");
+                System.out.println("Press '1' for Addition");
+                System.out.println("Press '2' for Subtraction");
+                System.out.println("Press '3' for Multiplication");
+                System.out.println("Press '4' for Division");
                 ch=sc.next().charAt(0);
                 switch(ch)
                 {
@@ -55,16 +55,18 @@ public class Calculator
                 System.out.println("Press '1' for finding perimeter of square");
                 System.out.println("Press '2' for finding perimeter of a rectangle");
                 System.out.println("Press '3' for finding perimeter of a circle");
+                System.out.println("Press '4' for finding perimeter of a parallelogram");
+                System.out.println("Press '5' for finding perimeter of a rhombus");
                 ch=sc.next().charAt(0);
                 switch(ch)
                 {
-                    case '1': double l;
+                    case '1':double l;
                     System.out.println("Enter length");
                     l=sc.nextDouble();
                     ans=(4*l);
                     System.out.println("Perimeter of Square is: " +ans);
                     break;
-                    case '2': System.out.println("Enter Length");
+                    case '2':System.out.println("Enter Length");
                     l=sc.nextDouble();
                     System.out.println("Enter Breadth");
                     b=sc.nextDouble();
@@ -77,12 +79,26 @@ public class Calculator
                     rd=sc.nextDouble();
                     ans=(2*3.142857142857143*rd);
                     System.out.println("Perimeter of Circle is:" +ans);
+                    break;
+                    case '4':System.out.println("Enter Length");
+                    l=sc.nextDouble();
+                    System.out.println("Enter Base");
+                    b=sc.nextDouble();
+                    ans=(2*(l+b));
+                    System.out.println("Perimeter of Parallelogram ia:" +ans);
+                    break;
+                    case '5':System.out.println("Enter length");
+                    l=sc.nextDouble();
+                    ans=(4*l);
+                    System.out.println("Perimeter of Rhombus is: " +ans);
                 }
                 break;
                 case '4':System.out.println("Okay you have selected Area finder");  
-                System.out.println("Press 1 for finding the area of square");
-                System.out.println("Press 2 for finding the area of rectangle");
-                System.out.println("Press 3 for finding the area of circle");
+                System.out.println("Press '1' for finding the area of square");
+                System.out.println("Press '2' for finding the area of rectangle");
+                System.out.println("Press '3' for finding the area of circle");
+                System.out.println("press '4' for finding the area of parallelogram");
+                System.out.println("Press '5' for finding the area of rhombus");
                 ch=sc.next().charAt(0);
                 switch(ch)
                 {
@@ -105,12 +121,28 @@ public class Calculator
                     r=sc.nextDouble();
                     a=(3.142857142857143*r);
                     System.out.println("Area of circle is:" +a);
+                    break;
+                    case '4':double h;
+                    System.out.println("Enter Base");
+                    b=sc.nextDouble();
+                    System.out.println("Enter Height");
+                    h=sc.nextDouble();
+                    a=(b*h);
+                    System.out.println("Area of parallelogram is:" +a);
+                    break;
+                    case '5':double d1, d2;
+                    System.out.println("Enter diagonal '1'");
+                    d1=sc.nextDouble();
+                    System.out.println("Enter diagonal '2'");
+                    d2=sc.nextDouble();
+                    a=((d1*d2)/2);
+                    System.out.println("Area of rhombus is:" +a);
                 }
                 break;
                 case '5':System.out.println("Okay, You have selected Temperature unit converter");
                 double c, f;
-                System.out.println("Press 1 for conversion from celsius to fahrenheit");
-                System.out.println("Press 2 for conversion from fahrenheit to celsius");
+                System.out.println("Press '1' for conversion from celsius to fahrenheit");
+                System.out.println("Press '2' for conversion from fahrenheit to celsius");
                 ch=sc.next().charAt(0);
                 switch(ch)
                 {
@@ -130,9 +162,9 @@ public class Calculator
                 break;
                 case '6':System.out.println("Okay, you have choosed Pythagoras Theorem");
                     double H, B, HP;
-                    System.out.println("Press 1 if Height and Base are given");
-                    System.out.println("Press 2 if Height and Hypotenuse are given");
-                    System.out.println("Press 3 if Hypotenuse and Base are given");
+                    System.out.println("Press '1' if Height and Base are given");
+                    System.out.println("Press '2' if Height and Hypotenuse are given");
+                    System.out.println("Press '3' if Hypotenuse and Base are given");
                     ch=sc.next().charAt(0);
                     switch(ch)
                     {
@@ -167,9 +199,9 @@ public class Calculator
                     double rootn=Math.sqrt(n);
                     System.out.println("Your Square root is:" +rootn);
                     break;
-                    case 'V':System.out.println("Version: 2.0");
+                    case 'V':System.out.println("Version: 2.2");
                     break;
-                    case 'v':System.out.println("Version: 2.0");
+                    case 'v':System.out.println("Version: 2.2");
             } 
             System.out.println("Would you like to run the program again?");
             System.out.println("If Yes press 'Y' and if No press 'N'");
